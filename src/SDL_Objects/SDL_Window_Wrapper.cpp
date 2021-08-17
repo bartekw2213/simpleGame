@@ -10,5 +10,5 @@ void SDL_Window_Wrapper::initialize_window(const char* title, int width, int hei
 
 void SDL_Window_Wrapper::initialize_window(const char* title, int x, int y, int width, int height, Uint32 flags) {
     window = SDL_CreateWindow(title, x, y, width, height, flags);
-    if (window == NULL) throw std::runtime_error(SDL_GetError());
+    if (window == NULL) SDL_Manager::throw_SDL_error();
 }
