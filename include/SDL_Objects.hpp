@@ -5,11 +5,9 @@
 
 class SDL_Manager {
    public:
-    static void initialize() {
-        if (SDL_Init(SDL_INIT_VIDEO) != 0) SDL_Manager::throw_SDL_error();
-    };
-    static void quit() { SDL_Quit(); };
-    static void throw_SDL_error() { throw std::runtime_error(SDL_GetError()); }
+    static void initialize();
+    static void quit();
+    static void throw_SDL_error();
 };
 
 class SDL_Window_Wrapper {
