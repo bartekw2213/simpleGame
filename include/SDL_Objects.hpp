@@ -23,3 +23,13 @@ class SDL_Window_Wrapper {
    private:
     SDL_Window* window = nullptr;
 };
+
+class SDL_Renderer_Wrapper {
+   public:
+    SDL_Renderer_Wrapper(){};
+    ~SDL_Renderer_Wrapper();
+    void initialize_renderer(SDL_Renderer*& passed_renderer);
+
+   private:
+    SDL_Renderer* renderer = nullptr;
+};
