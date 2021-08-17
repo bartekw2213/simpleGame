@@ -12,3 +12,9 @@ void SDL_Window_Wrapper::initialize_window(const char* title, int x, int y, int 
     window = SDL_CreateWindow(title, x, y, width, height, flags);
     if (window == NULL) SDL_Manager::throw_SDL_error();
 }
+
+const SDL_Renderer* SDL_Window_Wrapper::get_renderer() {
+    SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
+    if (renderer == NULL) SDL_Manager::throw_SDL_error();
+    return renderer;
+}
