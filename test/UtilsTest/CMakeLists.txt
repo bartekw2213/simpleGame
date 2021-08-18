@@ -1,0 +1,3 @@
+add_executable(AnimationSpriteTimerTest AnimationSpriteTimerTest.cpp)
+target_link_libraries(AnimationSpriteTimerTest gtest gtest_main pthread UTILS_LIB SDL_OBJECTS_LIB)
+add_test(AllUtilsTest AnimationSpriteTimerTest)
