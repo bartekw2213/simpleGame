@@ -10,9 +10,9 @@
 // It's 0.25 sec since animation started, what sprite should be shown now?
 // Instace of this class gives you an answer
 // *************************************************************************
-class AnimationSpriteTimer {
+class Animation_Sprite_Timer {
    public:
-    AnimationSpriteTimer(Uint32 anim_time, Uint16 sprts_num);
+    Animation_Sprite_Timer(Uint32 anim_time, Uint16 sprts_num);
     void start_countdown();
     const Uint16 index_of_sprite_displayed_now();
     const bool countdown_finished();
