@@ -46,3 +46,6 @@ _deps
 *.exe
 *.out
 *.app
+
+# VSCode configuration dir
+.vscode
