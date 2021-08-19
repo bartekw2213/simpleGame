@@ -4,7 +4,7 @@ Animation_Sprite_Timer::Animation_Sprite_Timer(Uint32 anim_time, Uint16 sprts_nu
     : started(false),
       start_time(0),
       animation_time(anim_time),
-      sprites_num(sprites_num),
+      sprites_num(sprts_num),
       time_per_sprite(anim_time / sprts_num) {}
 
 void Animation_Sprite_Timer::start_countdown() {
