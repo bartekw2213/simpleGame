@@ -5,6 +5,8 @@ void SDL_Manager::initialize() {
 
     int imgFlags = IMG_INIT_PNG;
     if (!(IMG_Init(imgFlags) & imgFlags)) SDL_Manager::throw_IMG_error();
+
+    if (!SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "1")) printf("Warning! Linear texture filtering not enabled!\n");
 }
 
 void SDL_Manager::quit() { SDL_Quit(); };
