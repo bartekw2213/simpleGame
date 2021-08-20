@@ -3,6 +3,7 @@
 #include <SDL2/SDL_image.h>
 
 #include <stdexcept>
+#include <string>
 
 class SDL_Manager {
    public:
@@ -33,4 +34,20 @@ class SDL_Renderer_Wrapper {
 
    private:
     SDL_Renderer* renderer = nullptr;
+};
+
+class SDL_Texture_Wrapper {
+   public:
+    SDL_Texture_Wrapper();
+    ~SDL_Texture_Wrapper();
+    void render(const int x, const int y, SDL_Rect* clip);
+    void initialize_texture(const std::string& path, SDL_Renderer_Wrapper*& renderer_wrapper);
+
+   private:
+    void load_texture(const std::string& path);
+    void free();
+
+   private:
+    SDL_Texture* texture;
+    SDL_Renderer_Wrapper* renderer_wrapper;
 };
