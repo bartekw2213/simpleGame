@@ -27,6 +27,7 @@ class SDL_Renderer_Wrapper {
     SDL_Renderer_Wrapper(){};
     ~SDL_Renderer_Wrapper();
     void initialize_renderer(SDL_Renderer*& passed_renderer);
+    SDL_Renderer* get_renderer();
 
    private:
     SDL_Renderer* renderer = nullptr;
