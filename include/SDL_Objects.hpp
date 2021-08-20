@@ -41,7 +41,7 @@ class SDL_Texture_Wrapper {
     SDL_Texture_Wrapper();
     ~SDL_Texture_Wrapper();
     void render(const int x, const int y, SDL_Rect* clip);
-    void initialize_texture(const std::string& path, SDL_Renderer_Wrapper*& renderer_wrapper);
+    void initialize_texture(const std::string& path, SDL_Renderer_Wrapper* renderer_wrapper);
 
    private:
     void load_texture(const std::string& path);

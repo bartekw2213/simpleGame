@@ -4,7 +4,7 @@ SDL_Texture_Wrapper::SDL_Texture_Wrapper() : texture(nullptr), renderer_wrapper(
 
 SDL_Texture_Wrapper::~SDL_Texture_Wrapper() { free(); }
 
-void SDL_Texture_Wrapper::initialize_texture(const std::string& path, SDL_Renderer_Wrapper*& renderer_wrapper) {
+void SDL_Texture_Wrapper::initialize_texture(const std::string& path, SDL_Renderer_Wrapper* renderer_wrapper) {
     this->renderer_wrapper = renderer_wrapper;
     load_texture(path);
 }
