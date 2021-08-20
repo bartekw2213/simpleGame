@@ -19,7 +19,7 @@ class SDL_Window_Wrapper {
     ~SDL_Window_Wrapper();
     void initialize_window(const char* title, int x, int y, int width, int height, Uint32 flags = SDL_WINDOW_SHOWN);
     void initialize_window(const char* title, int width, int height, Uint32 flags = SDL_WINDOW_SHOWN);
-    const SDL_Renderer* get_renderer();
+    SDL_Renderer* get_renderer();
 
    private:
     SDL_Window* window = nullptr;
