@@ -1,5 +1,6 @@
 #pragma once
 #include <SDL2/SDL.h>
+#include <SDL2/SDL_image.h>
 
 #include <stdexcept>
 
@@ -8,6 +9,7 @@ class SDL_Manager {
     static void initialize();
     static void quit();
     static void throw_SDL_error();
+    static void throw_IMG_error();
 };
 
 class SDL_Window_Wrapper {
