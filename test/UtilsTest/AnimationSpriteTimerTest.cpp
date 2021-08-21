@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 
-#include "SDL_Objects.hpp"
 #include "Utils.hpp"
+#include "SDL_Objects/SDL_Objects.hpp"
 
 class AnimationSpriteTimerTest : public ::testing::Test {
    protected:

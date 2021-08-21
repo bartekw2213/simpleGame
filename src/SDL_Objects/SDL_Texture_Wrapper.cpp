@@ -1,4 +1,4 @@
-#include "SDL_Objects.hpp"
+#include "SDL_Objects/SDL_Objects.hpp"
 
 SDL_Texture_Wrapper::SDL_Texture_Wrapper() : texture(nullptr), renderer_wrapper(nullptr) {}
 

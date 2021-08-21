@@ -1,5 +1,5 @@
 #pragma once
-#include "SDL_Objects.hpp"
+#include "SDL_Objects/SDL_Objects.hpp"
 
 #define GAME_NAME "Flappy Bird"
 #define GAME_WIDTH 400

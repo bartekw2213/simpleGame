@@ -1,4 +1,4 @@
-#include "SDL_Objects.hpp"
+#include "SDL_Objects/SDL_Objects.hpp"
 
 void SDL_Manager::initialize() {
     if (SDL_Init(SDL_INIT_VIDEO) != 0) SDL_Manager::throw_SDL_error();

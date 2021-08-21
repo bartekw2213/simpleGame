@@ -1,4 +1,4 @@
-#include "SDL_Objects.hpp"
+#include "SDL_Objects/SDL_Objects.hpp"
 
 SDL_Renderer_Wrapper::~SDL_Renderer_Wrapper() {
     if (renderer != nullptr) SDL_DestroyRenderer(renderer);

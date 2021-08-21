@@ -1,4 +1,4 @@
-#include "SDL_Objects.hpp"
+#include "SDL_Objects/SDL_Objects.hpp"
 
 SDL_Window_Wrapper::~SDL_Window_Wrapper() {
     if (window != nullptr) SDL_DestroyWindow(window);
