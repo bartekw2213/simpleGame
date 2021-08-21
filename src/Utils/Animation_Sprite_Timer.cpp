@@ -1,4 +1,4 @@
-#include "Utils.hpp"
+#include "Utils/Utils.hpp"
 
 Animation_Sprite_Timer::Animation_Sprite_Timer(Uint32 anim_time, Uint16 sprts_num)
     : started(false),
