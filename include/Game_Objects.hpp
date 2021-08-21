@@ -13,6 +13,9 @@ class Game {
     void start();
 
    private:
+    void loop();
+
+   private:
     SDL_Window_Wrapper window_wrapper;
     SDL_Renderer_Wrapper renderer_wrapper;
     SDL_Texture_Wrapper texture_wrapper;
