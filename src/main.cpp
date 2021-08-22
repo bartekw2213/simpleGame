@@ -1,7 +1,6 @@
 #include "Game/Game.hpp"
 
 int main(int argc, char* argv[]) {
-    Game game;
-    game.start();
+    Game::start();
     return 0;
 }

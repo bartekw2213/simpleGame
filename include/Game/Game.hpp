@@ -8,16 +8,17 @@
 
 class Game {
    public:
-    Game();
-    ~Game();
-    void start();
+    static void start();
 
    private:
-    void loop();
+    static void loop();
+    static void allocate_private_fields();
+    static void init_private_fields();
+    static void delete_private_fields();
 
    private:
-    SDL_Window_Wrapper window_wrapper;
-    SDL_Renderer_Wrapper renderer_wrapper;
-    SDL_Texture_Wrapper texture_wrapper;
-    SDL_Event event;
+    static SDL_Window_Wrapper* window_wrapper;
+    static SDL_Renderer_Wrapper* renderer_wrapper;
+    static SDL_Texture_Wrapper* texture_wrapper;
+    static SDL_Event event;
 };
