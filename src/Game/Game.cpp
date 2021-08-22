@@ -1,4 +1,4 @@
-#include "Game_Objects.hpp"
+#include "Game/Game.hpp"
 
 Game::Game() { SDL_Manager::initialize(); }
 
