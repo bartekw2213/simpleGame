@@ -42,3 +42,5 @@ void Game::loop() {
             if (event.type == SDL_QUIT) quit = true;
     }
 }
+
+inline SDL_Texture_Wrapper* Game::get_texture_wrapper() { return texture_wrapper; }
