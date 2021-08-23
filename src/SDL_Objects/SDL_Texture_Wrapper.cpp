@@ -10,13 +10,12 @@ void SDL_Texture_Wrapper::initialize_texture(const std::string& path, SDL_Render
 }
 
 void SDL_Texture_Wrapper::load_texture(const std::string& path) {
-    SDL_Texture* newTexture = NULL;
     SDL_Surface* loadedSurface = IMG_Load(path.c_str());
 
     if (loadedSurface == NULL) SDL_Manager::throw_IMG_error();
 
-    newTexture = SDL_CreateTextureFromSurface(renderer_wrapper->get_renderer(), loadedSurface);
-    if (newTexture == NULL) SDL_Manager::throw_SDL_error();
+    texture = SDL_CreateTextureFromSurface(renderer_wrapper->get_renderer(), loadedSurface);
+    if (texture == NULL) SDL_Manager::throw_SDL_error();
 
     SDL_FreeSurface(loadedSurface);
 }
