@@ -25,6 +25,10 @@ void SDL_Texture_Wrapper::render(const int x, const int y, SDL_Rect* clip) {
     SDL_RenderCopy(renderer_wrapper->get_renderer(), texture, clip, &renderQuad);
 }
 
+void SDL_Texture_Wrapper::render_fullscreen(SDL_Rect* clip) {
+    SDL_RenderCopy(renderer_wrapper->get_renderer(), texture, clip, nullptr);
+}
+
 void SDL_Texture_Wrapper::free() {
     if (texture != nullptr) {
         SDL_DestroyTexture(texture);
