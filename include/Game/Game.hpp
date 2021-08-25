@@ -5,7 +5,7 @@
 class Game {
    public:
     static void start();
-    static inline SDL_Texture_Wrapper* get_texture_wrapper();
+    static SDL_Texture_Wrapper* get_texture_wrapper() { return texture_wrapper; }
 
    private:
     static void loop();

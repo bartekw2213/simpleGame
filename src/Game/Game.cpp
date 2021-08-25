@@ -43,4 +43,3 @@ void Game::loop() {
     }
 }
 
-inline SDL_Texture_Wrapper* Game::get_texture_wrapper() { return texture_wrapper; }
