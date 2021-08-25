@@ -20,3 +20,18 @@ class Game_Mode {
     int objects_managers_num;
     Game_Objects_Manager** objects_managers;
 };
+
+class Start_Menu_Mode : public Game_Mode {
+   public:
+    Start_Menu_Mode();
+};
+
+class Game_In_Progress_Mode : public Game_Mode {
+   public:
+    Game_In_Progress_Mode();
+};
+
+class Game_Over_Mode : public Game_Mode {
+   public:
+    Game_Over_Mode();
+};
