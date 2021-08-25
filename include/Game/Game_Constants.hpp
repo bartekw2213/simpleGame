@@ -35,4 +35,6 @@ const int BG_X = 0;
 const int BG_Y = 0;
 const int BG_W = 140;
 const int BG_H = 255;
+const int BG_START_X = 0;
+const int BG_START_Y = 0;
 }
