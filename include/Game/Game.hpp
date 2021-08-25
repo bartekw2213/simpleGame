@@ -1,10 +1,6 @@
 #pragma once
+#include "Game/Game_Constants.hpp"
 #include "SDL_Objects/SDL_Objects.hpp"
-
-#define GAME_NAME "Flappy Bird"
-#define GAME_WIDTH 400
-#define GAME_HEIGHT 700
-#define TEXTURE_PATH "../resources/sprites/main-sprite.png"
 
 class Game {
    public:
