@@ -25,7 +25,7 @@ void Game::allocate_private_fields() {
 }
 
 void Game::init_private_fields() {
-    window_wrapper->initialize_window(GAME_NAME, 400, 700);
+    window_wrapper->initialize_window(GAME_NAME, GAME_WIDTH, GAME_HEIGHT);
     renderer_wrapper->initialize_renderer(window_wrapper->get_renderer());
     texture_wrapper->initialize_texture(TEXTURE_PATH, renderer_wrapper);
 }
