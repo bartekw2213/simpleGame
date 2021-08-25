@@ -21,3 +21,18 @@
  * Enum class representing possible game modes
  **********************************************/
 enum class GAME_MODE { START_MENU, GAME_IN_PROGRESS, GAME_OVER };
+
+/************************************************
+ * Number of objects each object manager manages
+ ************************************************/
+#define BACKGROUND_OBJECT_MANAGER_OBJECTS_NUM 1
+
+/*****************************************************
+ * Source coordinates from the texture of each object
+ *****************************************************/
+namespace src_texture {
+const int BG_X = 0;
+const int BG_Y = 0;
+const int BG_W = 140;
+const int BG_H = 255;
+}
