@@ -20,3 +20,11 @@ class Game_Objects_Manager {
    private:
     virtual void update_objects_positions() = 0;
 };
+
+class Background_Object_Manager : public Game_Objects_Manager {
+   public:
+    Background_Object_Manager();
+
+   private:
+    void update_objects_positions() override;
+};
