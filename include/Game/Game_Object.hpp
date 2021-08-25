@@ -28,7 +28,7 @@ class Game_Object {
 
 class Background_Object : public Game_Object {
    public:
-    Background_Object(int startX, int startY);
+    Background_Object();
 
    private:
     void render() override;

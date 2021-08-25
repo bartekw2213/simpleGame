@@ -19,6 +19,6 @@ void Game_Object::update_position(int newX, int newY) {
     yPos = newY;
 }
 
-Background_Object::Background_Object(int startX, int startY) : Game_Object(startX, startY, BG_X, BG_Y, BG_W, BG_H) {}
+Background_Object::Background_Object() : Game_Object(0, 0, BG_X, BG_Y, BG_W, BG_H) {}
 
 void Background_Object::render() { texture_wrapper->render_fullscreen(&srcRec); }

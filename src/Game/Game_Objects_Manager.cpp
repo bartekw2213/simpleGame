@@ -14,7 +14,7 @@ void Game_Objects_Manager::work() {
 }
 
 Background_Object_Manager::Background_Object_Manager() : Game_Objects_Manager(BACKGROUND_OBJECT_MANAGER_OBJECTS_NUM) {
-    objects[0] = new Background_Object(0, 0);
+    objects[0] = new Background_Object();
 }
 
 void Background_Object_Manager::update_objects_positions() {}
