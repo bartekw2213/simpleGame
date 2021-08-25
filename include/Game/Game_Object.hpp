@@ -1,4 +1,5 @@
 #pragma once
+#include "Game/Game_Constants.hpp"
 #include "SDL_Objects/SDL_Objects.hpp"
 
 /**************************************************************************
@@ -23,4 +24,12 @@ class Game_Object {
     const Uint16 width;
     const Uint16 height;
     SDL_Texture_Wrapper* texture_wrapper;
+};
+
+class Background_Object : public Game_Object {
+   public:
+    Background_Object(int startX, int startY);
+
+   private:
+    void render() override;
 };

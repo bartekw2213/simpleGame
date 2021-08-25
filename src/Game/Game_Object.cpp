@@ -2,6 +2,8 @@
 
 #include "Game/Game.hpp"
 
+using namespace src_texture;
+
 Game_Object::Game_Object(int startX, int startY, int srcRecX, int srcRecY, int srcRecW, int srcRecH)
     : xPos(startX), yPos(startY), width(srcRecW), height(srcRecH), texture_wrapper(Game::get_texture_wrapper()) {
     srcRec.x = srcRecX;
@@ -16,3 +18,7 @@ void Game_Object::update_position(int newX, int newY) {
     xPos = newX;
     yPos = newY;
 }
+
+Background_Object::Background_Object(int startX, int startY) : Game_Object(startX, startY, BG_X, BG_Y, BG_W, BG_H) {}
+
+void Background_Object::render() { texture_wrapper->render_fullscreen(&srcRec); }
