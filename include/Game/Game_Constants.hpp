@@ -38,4 +38,11 @@ const int BG_W = 140;
 const int BG_H = 255;
 const int BG_START_X = 0;
 const int BG_START_Y = 0;
+
+const int HEADER_X = 400;
+const int HEADER_Y = 100;
+const int HEADER_W = 100;
+const int HEADER_H = 50;
+const int HEADER_START_X = GAME_WIDTH / 2 - HEADER_W / 2;
+const int HEADER_START_Y = GAME_HEIGHT / 2;
 }
