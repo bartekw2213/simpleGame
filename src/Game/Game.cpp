@@ -43,6 +43,9 @@ void Game::loop() {
     while (!quit) {
         while (SDL_PollEvent(&event) != 0)
             if (event.type == SDL_QUIT) quit = true;
+
+        renderer_wrapper->render_clear();
+        game_mode_manager->work();
+        renderer_wrapper->render_present();
     }
 }
-
