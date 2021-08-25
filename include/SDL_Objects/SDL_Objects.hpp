@@ -30,6 +30,8 @@ class SDL_Renderer_Wrapper {
     SDL_Renderer_Wrapper(){};
     ~SDL_Renderer_Wrapper();
     void initialize_renderer(SDL_Renderer* passed_renderer);
+    void render_clear() { SDL_RenderClear(renderer); }
+    void render_present() { SDL_RenderPresent(renderer); }
     SDL_Renderer* get_renderer();
 
    private:
