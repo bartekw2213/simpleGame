@@ -33,3 +33,8 @@ class Background_Object : public Game_Object {
    private:
     void render() override;
 };
+
+class Header_Object : public Game_Object {
+   public:
+    Header_Object();
+}

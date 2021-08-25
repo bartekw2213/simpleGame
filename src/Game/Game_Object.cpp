@@ -26,3 +26,5 @@ void Game_Object::update_position(int newX, int newY) {
 Background_Object::Background_Object() : Game_Object(BG_START_X, BG_START_Y, BG_X, BG_Y, BG_W, BG_H) {}
 
 void Background_Object::render() { texture_wrapper->render_fullscreen(&srcRec); }
+
+Header_Object::Header_Object() : Game_Object(HEADER_START_X, HEADER_START_Y, HEADER_X, HEADER_Y, HEADER_W, HEADER_H) {}
