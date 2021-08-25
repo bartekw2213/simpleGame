@@ -1,5 +1,6 @@
 #pragma once
 #include "Game/Game_Constants.hpp"
+#include "Game/Game_Mode_Manager.hpp"
 #include "SDL_Objects/SDL_Objects.hpp"
 
 class Game {
@@ -17,5 +18,6 @@ class Game {
     static SDL_Window_Wrapper* window_wrapper;
     static SDL_Renderer_Wrapper* renderer_wrapper;
     static SDL_Texture_Wrapper* texture_wrapper;
+    static Game_Mode_Manager* game_mode_manager;
     static SDL_Event event;
 };

@@ -3,6 +3,7 @@
 SDL_Window_Wrapper* Game::window_wrapper = nullptr;
 SDL_Renderer_Wrapper* Game::renderer_wrapper = nullptr;
 SDL_Texture_Wrapper* Game::texture_wrapper = nullptr;
+Game_Mode_Manager* Game::game_mode_manager = nullptr;
 SDL_Event Game::event;
 
 void Game::start() {
@@ -20,6 +21,7 @@ void Game::allocate_private_fields() {
     window_wrapper = new SDL_Window_Wrapper();
     renderer_wrapper = new SDL_Renderer_Wrapper();
     texture_wrapper = new SDL_Texture_Wrapper();
+    game_mode_manager = new Game_Mode_Manager();
 }
 
 void Game::init_private_fields() {
@@ -32,6 +34,7 @@ void Game::delete_private_fields() {
     delete window_wrapper;
     delete renderer_wrapper;
     delete texture_wrapper;
+    delete game_mode_manager;
 }
 
 void Game::loop() {
