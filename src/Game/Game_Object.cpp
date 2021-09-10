@@ -5,7 +5,11 @@
 using namespace src_texture;
 
 Game_Object::Game_Object(int startX, int startY, int srcRecX, int srcRecY, int srcRecW, int srcRecH)
-    : xPos(startX), yPos(startY), width(srcRecW), height(srcRecH), texture_wrapper(Game::get_texture_wrapper()) {
+    : xPos(startX),
+      yPos(startY),
+      width(srcRecW * TEXTURE_MULTIPLIER),
+      height(srcRecH * TEXTURE_MULTIPLIER),
+      texture_wrapper(Game::get_texture_wrapper()) {
     srcRec.x = srcRecX;
     srcRec.y = srcRecY;
     srcRec.w = srcRecW;
