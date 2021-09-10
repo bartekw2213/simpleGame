@@ -7,6 +7,7 @@
 #define GAME_WIDTH 400
 #define GAME_HEIGHT 700
 #define TEXTURE_PATH "../../resources/sprites/main-sprite.png"
+#define TEXTURE_MULTIPLIER 2  // How many times each texture will be bigger than original one
 
 /*********************************
  * Constants regarding game modes
