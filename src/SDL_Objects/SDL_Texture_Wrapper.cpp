@@ -21,7 +21,7 @@ void SDL_Texture_Wrapper::load_texture(const std::string& path) {
 }
 
 void SDL_Texture_Wrapper::render(const int x, const int y, SDL_Rect* clip) {
-    SDL_Rect renderQuad = {x, y, clip->w, clip->h};
+    SDL_Rect renderQuad = {x, y, clip->w * TEXTURE_MULTIPLIER, clip->h * TEXTURE_MULTIPLIER};
     SDL_RenderCopy(renderer_wrapper->get_renderer(), texture, clip, &renderQuad);
 }
 
