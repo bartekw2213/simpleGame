@@ -37,4 +37,4 @@ class Background_Object : public Game_Object {
 class Header_Object : public Game_Object {
    public:
     Header_Object();
-}
+};

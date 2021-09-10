@@ -18,3 +18,9 @@ Background_Object_Manager::Background_Object_Manager() : Game_Objects_Manager(BA
 }
 
 void Background_Object_Manager::update_objects_positions() {}
+
+Header_Object_Manager::Header_Object_Manager() : Game_Objects_Manager(HEADER_OBJECT_MANAGER_OBJECTS_NUM) {
+    objects[0] = new Header_Object();
+}
+
+void Header_Object_Manager::update_objects_positions() {}

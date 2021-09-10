@@ -28,3 +28,11 @@ class Background_Object_Manager : public Game_Objects_Manager {
    private:
     void update_objects_positions() override;
 };
+
+class Header_Object_Manager : public Game_Objects_Manager {
+   public:
+    Header_Object_Manager();
+
+   private:
+    void update_objects_positions() override;
+};

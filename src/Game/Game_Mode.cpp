@@ -20,6 +20,7 @@ void Game_Mode::work() {
 
 Start_Menu_Mode::Start_Menu_Mode() : Game_Mode(GAME_MODE::START_MENU, START_MENU_OBJECTS_MANAGER_NUM) {
     objects_managers[0] = new Background_Object_Manager();
+    objects_managers[1] = new Header_Object_Manager();
 };
 
 Game_In_Progress_Mode::Game_In_Progress_Mode()
